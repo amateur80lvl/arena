@@ -27,7 +27,7 @@ static inline size_t align(size_t n, size_t alignment)
  * Align `n` to `alignment` boundary which must be a power of two or zero.
  */
 {
-    if (alignment > 0) {
+    if (alignment > 1) {
         register size_t a = alignment - 1;
         return (n + a) & ~a;
     } else {
