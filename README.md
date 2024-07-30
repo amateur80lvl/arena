@@ -59,7 +59,7 @@ Free arena and all its regions.
 ```c
 void set_region_capacity(Arena* arena, size_t capacity);
 ```
-Set desired capacity of newly created regions.
+Set desired capacity for newly created regions.
 
 ```c
 void* arena_alloc(Arena* arena, size_t num_elements, element_type_name);
